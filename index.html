@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>功能選單與動態看板</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item {
+      height: calc(100vh - 56px); /* 留下導覽列的高度 (56px) */
+    }
+    .carousel-item img {
+      object-fit: cover; /* 確保圖片覆蓋整個區域 */
+      height: 100%; /* 使圖片高度填滿 */
+      width: 100%; /* 使圖片寬度填滿 */
+    }
+  </style>
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">網站名稱</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">首頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">產品介紹</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">產品特色</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">服務聯繫</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 動態看板 -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/800/400?image=0" class="d-block" alt="圖片1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>圖片標題 1</h5>
+        <p>充滿熱血與感動的現場表演。</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/800/400?image=1" class="d-block" alt="圖片2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>圖片標題 2</h5>
+        <p>在音樂之路上相伴多年的夥伴。</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://picsum.photos/800/400?image=2" class="d-block" alt="圖片3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>圖片標題 3</h5>
+        <p>與粉絲們的激情互動瞬間。</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">上一張</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">下一張</span>
+  </button>
+</div>
+
+<!-- 卡片區域 -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="https://picsum.photos/800/400?image=3" class="card-img-top" alt="卡片1">
+        <div class="card-body">
+          <h5 class="card-title">卡片標題 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.facebook.com" class="btn btn-primary">教育部字典</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="https://picsum.photos/800/400?image=4" class="card-img-top" alt="卡片2">
+        <div class="card-body">
+          <h5 class="card-title">卡片標題 2</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.instagram.com" class="btn btn-primary">教育部字典</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="https://picsum.photos/800/400?image=5" class="card-img-top" alt="卡片3">
+        <div class="card-body">
+          <h5 class="card-title">卡片標題 3</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.youtube.com" class="btn btn-primary">教育部字典</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="https://picsum.photos/800/400?image=0" class="card-img-top" alt="五月天演唱會 1">
+        <div class="card-body">
+          <h5 class="card-title">五月天演唱會 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.facebook.com" class="btn btn-primary">教育部字典</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">五月天演唱會 2</h5>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/yiBx_sXrrcw?si=mi8UUY8V6Yj3FP1G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.instagram.com" class="btn btn-primary">教育部字典</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card" style="width: 100%;">
+        <div class="card-body">
+          <h5 class="card-title">五月天演唱會 3</h5>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/B6HPFPjFKA8?si=Fc1gEjW99Vom3Dch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="https://www.youtube.com" class="btn btn-primary">教育部字典</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 新增的影片區域 -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/Bn0ScL3ofIo?si=7Y7W4shVgCqYQqih" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/-H4nrf84iUk?si=mhlXVybRBZUMJJcm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/OiKuaYAp79M?si=jHZDhtULTc3Fkb7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
